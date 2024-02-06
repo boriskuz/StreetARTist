@@ -1,0 +1,62 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as var;
+@use 'sass:math';
+
+#landingPage {
+  display: none;
+  background-color: var.$primary-color;
+  padding-bottom: var.$gutter-base * 5;
+
+  .landing-header {
+    box-shadow: var.$shadow-primary;
+  }
+
+  .logo-landing-page {
+    margin-top: var.$gutter-base * 1.7;
+    margin-bottom: var.$gutter-base * 1.7;
+  }
+
+  .join-as-artist {
+    padding-top: var.$gutter-base * 1.5;
+    padding-bottom: var.$gutter-base * 6;
+    background-color: var.$beige-color;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+    transition: 0.5s;
+
+    h1 {
+      margin-bottom: math.div(var.$gutter-base, 4);
+    }
+
+    #artistSelect {
+      width: 90px;
+      margin-left: 120px;
+      @include mix.primary-select;
+
+      option {
+        @include mix.primary-option;
+      }
+    }
+  }
+
+  .join-as-artist:hover {
+    transform: scale(1.02, 1.02);
+  }
+
+  .join-as-visitor {
+    margin-top: -(var.$gutter-base * 5.6);
+    padding-top: var.$gutter-base * 5;
+    padding-bottom: var.$gutter-base * 4;
+    background-color: var.$secondary-color;
+    color: var.$primary-color;
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%);
+    transition: 0.5s;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .join-as-visitor:hover {
+    transform: scale(1.02, 1.02);
+  }
+}

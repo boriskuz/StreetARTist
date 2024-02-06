@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Street ARTists</title>
+  </head>
+  <body>
+    <section id="landingPage">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="row landing-header">
+              <div class="col">
+                <h2 class="text-center">Street ARTists</h2>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-5">
+                <img class="img-fluid logo-landing-page" src="img/logo2.png" alt="Logo image" />
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-9">
+                <div class="join-as-artist text-center">
+                  <h1>Join as Artist</h1>
+                  <select name="artist-select" id="artistSelect">
+                    <option selected>Choose</option>
+                  </select>
+                </div>
+                <div class="join-as-visitor text-center">
+                  <h1>Join as Visitor</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="visitorHomePage">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="row header align-items-center">
+              <div class="col-3 pe-0">
+                <img class="header__logo" src="./img/logo.png" alt="" />
+              </div>
+              <div class="col ps-0">
+                <h2>Street ARTists</h2>
+              </div>
+              <div class="col-2 text-end">
+                <a href="#auction">
+                  <i class="fa-solid fa-gavel fs-2"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row bricks py-4 align-items-center">
+              <div class="col-7">
+                <h2 class="bricks__title">Looking for masterpiece?</h2>
+              </div>
+              <div class="col-5 text-end">
+                <button id="visitorListingBtn" class="primary-button">Find one now!</button>
+              </div>
+            </div>
+
+            <div class="row pt-3 sliders">
+              <div class="scroller" data-direction="left" data-speed="slow">
+                <div class="scroller__inner scroller__left"></div>
+              </div>
+            </div>
+            <div class="row pb-3 sliders">
+              <div class="scroller" data-direction="right" data-speed="slow">
+                <div class="scroller__inner scroller__right"></div>
+              </div>
+            </div>
+            <div class="row pb-3">
+              <div class="col">
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row justify-content-center carousel-row">
+                        <div class="col-8 position-relative">
+                          <div class="hr-line position-absolute"></div>
+                          <div class="row">
+                            <div class="col">
+                              <div class="artist-testimonial px-2 position-relative text-center">
+                                <img
+                                  src="https://cdn.domestika.org/c_fill,dpr_auto,f_auto,h_256,pg_1,t_base_params,w_256/v1563210818/avatars/001/150/321/1150321-original.jpg?1563210818"
+                                  class="position-absolute rounded-circle"
+                                  alt="Artist-1"
+                                />
+                                <p class="pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
+                              </div>
+                            </div>
+
+                            <div class="col testimonial d-flex text-center align-items-center">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row justify-content-center carousel-row">
+                        <div class="col-8 position-relative">
+                          <div class="hr-line position-absolute"></div>
+                          <div class="row">
+                            <div class="col">
+                              <div class="artist-testimonial px-2 position-relative text-center">
+                                <img
+                                  src="https://news.artnet.com/app/news-upload/2021/05/Marisabel-Bazan-in-her-Studio-LA-256x256.jpg"
+                                  class="position-absolute rounded-circle"
+                                  alt="Artist-2"
+                                />
+                                <p class="pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
+                              </div>
+                            </div>
+
+                            <div class="col testimonial d-flex text-center align-items-center">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row justify-content-center carousel-row">
+                        <div class="col-8 position-relative">
+                          <div class="hr-line position-absolute"></div>
+                          <div class="row">
+                            <div class="col">
+                              <div class="artist-testimonial px-2 position-relative text-center">
+                                <img
+                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLPq3f38K0tRXLd9bHzEue3DEHzCIprDWar9alPap96-QdCNGqnfW-5A-NgAATX8fAtg&usqp=CAU"
+                                  class="position-absolute rounded-circle"
+                                  alt="Artist-1"
+                                />
+                                <p class="pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
+                              </div>
+                            </div>
+
+                            <div class="col testimonial d-flex text-center align-items-center">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="visitorListingPage">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="row header align-items-center">
+              <div class="col-3 pe-0">
+                <img class="header__logo" src="./img/logo.png" alt="" />
+              </div>
+              <div class="col ps-0">
+                <h2>Street ARTists</h2>
+              </div>
+              <div class="col-2 text-end">
+                <a href="#auction">
+                  <i class="fa-solid fa-gavel fs-2"></i>
+                </a>
+              </div>
+            </div>
+            <div id="cardContainerVisitor" class="row justify-content-center">
+              <div id="visitorListingCards"></div>
+              <button class="position-fixed btn-filter" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <i class="fa-solid fa-sliders fa-rotate-90"></i>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h2 class="offcanvas-title" id="offcanvasRightLabel">Filter by</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <form id="filterForm">
+                    <h3>By Item Title</h3>
+                    <input id="filterByTitle" type="text" placeholder="Label" />
+                    <div class="filter-hr-line"></div>
+                    <h3>By Artist</h3>
+                    <select name="artist-select-filter" class="select-filter" id="artistSelectFilter">
+                      <option selected>Choose</option>
+                    </select>
+                    <div class="filter-hr-line"></div>
+                    <h3>By Item Price</h3>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <label for="minValue">Min: </label>
+                        <input type="number" placeholder="Value" id="minValue" />
+                      </div>
+                      <div>
+                        <label for="maxValue">Max: </label>
+                        <input type="number" placeholder="Value" id="maxValue" />
+                      </div>
+                    </div>
+                    <div class="filter-hr-line"></div>
+                    <h3>By Type</h3>
+                    <select name="type-select-filter" class="select-filter" id="typeSelectFilter">
+                      <option selected>Choose</option>
+                    </select>
+                    <div class="filter-hr-line"></div>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn-filter btn-filter-check" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-check"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="artistHomePage">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="row header align-items-center">
+              <div class="col-3 pe-0">
+                <img class="header__logo" src="./img/logo.png" alt="" />
+              </div>
+              <div class="col ps-0">
+                <h2 class="artist-name-header"></h2>
+              </div>
+              <div class="col-2 text-end">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span><i class="fa-solid fa-bars fs-2"></i></span>
+                </button>
+                <div class="offcanvas offcanvas-top" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav text-center justify-content-end flex-grow-1">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#artists">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#artistsItems">Items</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link auction-link" href="#auction">Auction</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col me-3 text-center mt-2 items-info-box">
+                  <h3>Total Items Sold</h3>
+                  <p class="items-values"><span id="itemsSold">12</span>/<span id="totalItems">35</span></p>
+                </div>
+                <div class="col text-center mt-2 items-info-box">
+                  <h3>Total Income</h3>
+                  <p class="items-values">$<span id="totalIncome">1700</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-center mt-3 live-auctioning-item">
+                  <h3>Live Auctioning Item</h3>
+                  <p class="items-values">$<span id="auctioningItemBid">0</span></p>
+                  <h3>current bid</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container chart-container">
+            <div class="row">
+              <div class="col">
+                <h3>Display my income for last</h3>
+                <div class="row">
+                  <div class="col text-center">
+                    <button class="income-btn" type="button">7 days</button>
+                  </div>
+                  <div class="col text-center">
+                    <button class="income-btn" type="button">14 days</button>
+                  </div>
+                  <div class="col text-center">
+                    <button class="income-btn" type="button">30 days</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mt-3 chart-box"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="artistItemsPage">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="row header align-items-center">
+              <div class="col-3 pe-0">
+                <img class="header__logo" src="./img/logo.png" alt="" />
+              </div>
+              <div class="col ps-0">
+                <h2 class="artist-name-header">Street ARTists</h2>
+              </div>
+              <div class="col-2 text-end">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbarItems"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span><i class="fa-solid fa-bars fs-2"></i></span>
+                </button>
+                <div class="offcanvas offcanvas-top" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbarItems" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav text-center justify-content-end flex-grow-1">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#artists">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#artistsItems">Items</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link auction-link" href="#auction">Auction</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-4 p-3 add-new-item">
+              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightNewItem" aria-controls="offcanvasRightNewItem">
+                <div id="addItemReset" class="border p-3 text-center">
+                  <h3>+ Add new Item</h3>
+                </div>
+              </button>
+            </div>
+            <div id="cardContainerArtist" class="row justify-content-center"></div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightNewItem" data-bs-backdrop="false" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-body">
+                <form id="addNewItemForm" class="new-item-form">
+                  <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <h2 class="offcanvas-title" id="offcanvasRightLabelHeader">Add new Item</h2>
+                    <div class="form-check form-check-reverse">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                      <label class="form-check-label" for="flexCheckChecked">Is published</label>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="newItemTitle" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="newItemTitle" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="newItemDescription" class="form-label">Description</label>
+                    <textarea class="form-control" id="newItemDescription" rows="3" required></textarea>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="mb-3">
+                        <label for="typeAddNewItem" class="form-label">Type</label><br />
+                        <select name="type-select-filter" class="select-filter" id="typeAddNewItem">
+                          <option selected>Choose</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="mb-3">
+                        <label for="newItemPrice" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="newItemPrice" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="newItemURL" class="form-label">Image URL</label>
+                    <input type="text" class="form-control" id="newItemURL" required />
+                  </div>
+                  <p id="paragraphOr" class="text-center">or</p>
+                  <button
+                    id="start-camera"
+                    class="btn form-control position-relative py-5 snapshot-btn"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScreenshot"
+                    aria-controls="offcanvasScreenshot"
+                  >
+                    <div class="d-flex flex-column position-absolute camera-btn-container">
+                      <i class="fa-solid fa-camera display-1"></i>
+                      <p>Take a snapshot</p>
+                    </div>
+                    <canvas id="canvasImg" width="auto"></canvas>
+                  </button>
+                  <div class="row mt-3">
+                    <div id="btnAddOrEdit" class="col">
+                      <button class="btn form-control add-new-item-btn" type="submit">Add new Item</button>
+                    </div>
+                    <div class="col">
+                      <button class="btn form-control cancel-btn" data-bs-dismiss="offcanvas" aria-label="Close" type="button">Cancel</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScreenshot" data-bs-backdrop="false" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-body">
+                <video id="video" width="100%" height="100%" autoplay></video>
+                <button class="btn form-control" id="click-photo" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasScreenshot" aria-label="Close">
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="auctionPage">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col pb-4">
+            <div class="row header align-items-center">
+              <div class="col-3 pe-0">
+                <img class="header__logo" src="./img/logo.png" alt="" />
+              </div>
+              <div class="col ps-0">
+                <h2>Street ARTists</h2>
+              </div>
+            </div>
+            <div class="row mt-4 auction-card-container"></div>
+            <div class="row mt-4">
+              <div class="col">
+                <form id="biddingForm" class="row">
+                  <div class="col">
+                    <label for="bidInput" class="form-label">Your Bid</label>
+                    <input type="number" class="form-control" id="bidInput" required />
+                  </div>
+                  <div class="col-5 align-self-end">
+                    <button type="submit" id="bidBtn" class="btn form-control primary-button">Bid</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col">
+                <ol id="biddingResults" class="list-group list-group-numbered biddings"></ol>
+              </div>
+            </div>
+            <div class="row mt-5 text-end">
+              <div class="col">
+                <p class="mb-0 fs-6"><span id="timer"></span> Counting Down to Auction End</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/0d83d5e4da.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <script src="js/data.js"></script>
+    <script src="js/visitorHomePage.js"></script>
+    <script src="js/visitorListingPage.js"></script>
+    <script src="js/landingPage.js"></script>
+    <script src="js/artistHomePage.js"></script>
+    <script src="js/captureImage.js"></script>
+    <script src="js/artistItemsPage.js"></script>
+    <script src="js/auctionPage.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

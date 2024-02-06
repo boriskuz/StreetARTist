@@ -1,0 +1,62 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as var;
+@use 'sass:math';
+
+#artistHomePage {
+  display: none;
+  background-color: var.$beige-color;
+
+  .header {
+    background-color: var.$primary-color;
+    box-shadow: var.$shadow-primary;
+    &__logo {
+      margin-bottom: -35px;
+    }
+    .offcanvas {
+      top: 62px;
+      height: 217px;
+      background-color: var.$secondary-color;
+      color: var.$primary-color;
+    }
+    .offcanvas li {
+      font-size: var.$font-size-bigger;
+    }
+
+    .offcanvas li:hover {
+      background-color: var.$primary-color;
+      color: var.$secondary-color;
+    }
+  }
+
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .items-info-box {
+    background-color: var.$secondary-color;
+    color: var.$primary-color;
+  }
+
+  .live-auctioning-item {
+    background-color: var.$brick-color;
+    color: var.$primary-color;
+  }
+
+  .items-values {
+    font-size: var.$font-size-biggest;
+  }
+
+  .chart-container {
+    background-color: var.$primary-color;
+
+    .income-btn {
+      @include mix.primary-button;
+      padding: 8px 30px;
+    }
+
+    .income-btn:focus {
+      background-color: var.$brick-color;
+    }
+  }
+}

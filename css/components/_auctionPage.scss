@@ -1,0 +1,77 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as var;
+@use 'sass:math';
+
+#auctionPage {
+  display: none;
+  background-color: var.$primary-color;
+
+  .header {
+    box-shadow: var.$shadow-primary;
+    &__logo {
+      margin-bottom: -35px;
+    }
+  }
+
+  .auction-card-container {
+    .card {
+      background-color: var.$secondary-color;
+      color: var.$primary-color;
+      .card-body .title-badge {
+        @include mix.title-badge(var.$primary-color, var.$secondary-color);
+      }
+
+      .card-subtitle {
+        font-size: var.$font-size-normal;
+        color: var.$primary-color;
+      }
+
+      box-shadow: var.$shadow-primary;
+      border-radius: 0;
+      padding-left: 0;
+      padding-right: 0;
+
+      &-img-top {
+        border-radius: 0;
+      }
+
+      &-text {
+        font-size: var.$font-size-smaller;
+      }
+    }
+  }
+  .primary-button {
+    @include mix.primary-button(var.$brick-color);
+    font-size: var.$font-size-big;
+  }
+
+  .primary-button:focus {
+    border: none;
+    box-shadow: none;
+  }
+
+  #bidInput {
+    color: var.$secondary-color;
+  }
+
+  #bidInput:focus {
+    border: none;
+    box-shadow: none;
+  }
+  .biddings li:nth-child(odd) {
+    background-color: var.$beige-color;
+    color: var.$secondary-color;
+    .badge {
+      background-color: var.$secondary-color;
+      color: var.$primary-color;
+    }
+  }
+  .biddings li:nth-child(even) {
+    background-color: var.$secondary-color;
+    color: var.$primary-color;
+    .badge {
+      background-color: var.$primary-color;
+      color: var.$secondary-color;
+    }
+  }
+}

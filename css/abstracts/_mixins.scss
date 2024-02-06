@@ -1,0 +1,58 @@
+@use './variables' as var;
+@use 'sass:math';
+
+@mixin primary-select($color: var.$secondary-color) {
+  padding: 5px 10px;
+  border: 1px solid $color;
+  color: $color;
+  border-radius: 2px;
+  font-size: 13px;
+  background-color: transparent;
+}
+
+@mixin primary-option($color: var.$secondary-color, $bg-color: var.$primary-color) {
+  background-color: $bg-color;
+  color: $color;
+}
+
+@mixin primary-button($bg-color: var.$secondary-color, $color: var.$primary-color) {
+  color: $color;
+  font-size: 12px;
+  padding: 4px 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: $bg-color;
+}
+
+@mixin title-badge($bg-color: var.$secondary-color, $color: var.$primary-color) {
+  color: $color;
+  padding: 3px 8px;
+  border: none;
+  border-radius: 2px;
+  background-color: $bg-color;
+  font-family: var.$font-family-base;
+  font-size: var.$font-size-small;
+  font-weight: var.$font-weight-lighter;
+  box-shadow: 0px 1px 1px 0px #00000040;
+}
+
+@mixin filter-and-check-btn {
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  color: var.$primary-color;
+  background-color: var.$brick-color;
+  border: none;
+  border-radius: 2px;
+  bottom: 10px;
+  right: 10px;
+  font-size: 40px;
+}
+
+@mixin primary-input {
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid var.$primary-color;
+  border-radius: 2px;
+}

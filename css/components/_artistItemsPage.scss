@@ -1,0 +1,168 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as var;
+@use 'sass:math';
+
+#artistItemsPage {
+  // display: none;
+  background-color: var.$beige-color;
+
+  .header {
+    background-color: var.$primary-color;
+    box-shadow: var.$shadow-primary;
+    &__logo {
+      margin-bottom: -35px;
+    }
+
+    .offcanvas {
+      top: 62px;
+      height: 217px;
+      background-color: var.$secondary-color;
+      color: var.$primary-color;
+    }
+    .offcanvas li {
+      font-size: var.$font-size-bigger;
+    }
+
+    .offcanvas li:hover {
+      background-color: var.$primary-color;
+      color: var.$secondary-color;
+    }
+  }
+
+  .add-new-item {
+    background-color: var.$primary-color;
+    .border {
+      border: 2px dashed var.$secondary-color !important;
+    }
+    h3 {
+      color: var.$secondary-color;
+    }
+  }
+
+  #cardContainerArtist {
+    .card {
+      margin-bottom: var.$gutter-base;
+      box-shadow: var.$shadow-primary;
+      border-radius: 0;
+      padding-left: 0;
+      padding-right: 0;
+
+      &-body {
+        background-color: var.$primary-color;
+        color: var.$secondary-color;
+      }
+
+      .card-body .title-badge {
+        @include mix.title-badge;
+      }
+
+      .card-subtitle {
+        font-size: var.$font-size-normal;
+        color: var.$secondary-color;
+      }
+
+      .card-date {
+        font-size: var.$font-size-tiny;
+        color: var.$powder-color;
+      }
+
+      &-img-top {
+        border-radius: 0;
+      }
+
+      &-text {
+        font-size: var.$font-size-smaller;
+      }
+
+      &-footer {
+        background-color: var.$secondary-color;
+        border: none;
+        border-radius: 0;
+
+        .send-to-auction-btn {
+          @include mix.primary-button(var.$blue-color, var.$grey-level-1);
+        }
+        .unpublish-btn {
+          @include mix.primary-button(var.$green-color, var.$grey-level-1);
+        }
+        .publish-btn {
+          @include mix.primary-button(var.$grey-level-2, var.$grey-level-4);
+        }
+        .remove-btn {
+          @include mix.primary-button(var.$brick-color, var.$grey-level-1);
+        }
+        .edit-btn {
+          @include mix.primary-button(var.$primary-color, var.$secondary-color);
+        }
+      }
+    }
+  }
+
+  .offcanvas.offcanvas-end {
+    background-color: var.$secondary-color;
+    color: var.$primary-color;
+    font-family: var.$font-family-base;
+    width: 100%;
+    border-left: 0;
+
+    .offcanvas-title {
+      font-family: var.$font-family-base;
+    }
+
+    .new-item-form h2 {
+      margin: 0;
+    }
+
+    .new-item-form input,
+    textarea {
+      background-color: transparent;
+      border: 1px solid var.$primary-color;
+      border-radius: 2px;
+      padding: 2px 5px;
+      color: var.$primary-color;
+    }
+    ::placeholder {
+      color: var.$primary-color;
+      font-size: 13px;
+    }
+
+    .snapshot-btn {
+      border: 2px dashed var.$primary-color;
+      color: var.$primary-color;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .add-new-item-btn,
+  .edit-item-btn {
+    @include mix.primary-button(var.$brick-color);
+    font-size: var.$font-size-big;
+  }
+  .cancel-btn {
+    @include mix.primary-button(var.$grey-level-2, var.$grey-level-4);
+    font-size: var.$font-size-big;
+  }
+  .form-check-reverse input {
+    background-color: var.$primary-color !important;
+  }
+
+  .camera-btn-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .select-filter {
+    width: 100%;
+    @include mix.primary-select(var.$primary-color);
+
+    option {
+      @include mix.primary-option;
+    }
+  }
+
+  #click-photo {
+    color: var.$primary-color;
+    font-size: var.$font-size-biggest;
+  }
+}

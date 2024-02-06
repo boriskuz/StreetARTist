@@ -1,0 +1,693 @@
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #a16a5e;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  font-family: "Reenie Beanie", cursive;
+}
+
+h1 {
+  font-size: 2.8125rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-family: "Reenie Beanie", cursive;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+#landingPage {
+  display: none;
+  background-color: #fcebd5;
+  padding-bottom: 9.375rem;
+}
+#landingPage .landing-header {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#landingPage .logo-landing-page {
+  margin-top: 3.1875rem;
+  margin-bottom: 3.1875rem;
+}
+#landingPage .join-as-artist {
+  padding-top: 2.8125rem;
+  padding-bottom: 11.25rem;
+  background-color: #edd5bb;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+  transition: 0.5s;
+}
+#landingPage .join-as-artist h1 {
+  margin-bottom: 0.46875rem;
+}
+#landingPage .join-as-artist #artistSelect {
+  width: 90px;
+  margin-left: 120px;
+  padding: 5px 10px;
+  border: 1px solid #a16a5e;
+  color: #a16a5e;
+  border-radius: 2px;
+  font-size: 13px;
+  background-color: transparent;
+}
+#landingPage .join-as-artist #artistSelect option {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+#landingPage .join-as-artist:hover {
+  transform: scale(1.02, 1.02);
+}
+#landingPage .join-as-visitor {
+  margin-top: -10.5rem;
+  padding-top: 9.375rem;
+  padding-bottom: 7.5rem;
+  background-color: #a16a5e;
+  color: #fcebd5;
+  clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%);
+  transition: 0.5s;
+}
+#landingPage .join-as-visitor h1 {
+  margin: 0;
+}
+#landingPage .join-as-visitor:hover {
+  transform: scale(1.02, 1.02);
+}
+
+#visitorHomePage {
+  display: none;
+  background-color: #fcebd5;
+}
+#visitorHomePage .header {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#visitorHomePage .header__logo {
+  margin-bottom: -35px;
+}
+#visitorHomePage .fa-gavel {
+  color: #a16a5e;
+}
+#visitorHomePage .bricks {
+  background-image: url("../img/Bricks.png");
+}
+#visitorHomePage .bricks .primary-button {
+  color: #fcebd5;
+  font-size: 12px;
+  padding: 4px 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: #a16a5e;
+}
+#visitorHomePage .bricks__title {
+  font-family: "Roboto", sans-serif;
+}
+#visitorHomePage .sliders {
+  background-color: #edd5bb;
+}
+#visitorHomePage .scroller {
+  max-width: 600px;
+}
+#visitorHomePage .scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#visitorHomePage .scroller__inner img {
+  width: 400px;
+}
+#visitorHomePage .scroller[data-animated=true] {
+  overflow: hidden;
+}
+#visitorHomePage .scroller[data-animated=true] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+#visitorHomePage .scroller[data-direction=right] {
+  --_animation-direction: reverse;
+}
+#visitorHomePage .scroller[data-direction=left] {
+  --_animation-direction: forwards;
+}
+#visitorHomePage .scroller[data-speed=fast] {
+  --_animation-duration: 20s;
+}
+#visitorHomePage .scroller[data-speed=slow] {
+  --_animation-duration: 180s;
+}
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+#visitorHomePage .artist-testimonial {
+  background-color: #e09686;
+  color: #f8f8f8;
+  padding-top: 40px;
+}
+#visitorHomePage .artist-testimonial img {
+  top: -30px;
+  left: 29px;
+  width: 60px;
+  border: 2px solid #a16a5e;
+}
+#visitorHomePage .artist-testimonial p {
+  font-size: 9px;
+  font-weight: 400;
+}
+#visitorHomePage .carousel-row {
+  padding-top: 70px;
+}
+#visitorHomePage .hr-line {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 210px;
+  width: 2px;
+  z-index: 999;
+  background-color: #a16a5e;
+}
+#visitorHomePage .testimonial {
+  font-size: 9px;
+  font-weight: 400;
+}
+#visitorHomePage .carousel-control-prev {
+  opacity: 1;
+}
+#visitorHomePage .carousel-control-prev-icon {
+  height: 3rem;
+  width: 3rem;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23a16a5e'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+#visitorHomePage .carousel-control-next {
+  opacity: 1;
+}
+#visitorHomePage .carousel-control-next-icon {
+  height: 3rem;
+  width: 3rem;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23a16a5e'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+#visitorListingPage {
+  display: none;
+  background-color: #fcebd5;
+}
+#visitorListingPage .header {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#visitorListingPage .header__logo {
+  margin-bottom: -35px;
+}
+#visitorListingPage .fa-gavel {
+  color: #a16a5e;
+}
+#visitorListingPage #cardContainerVisitor {
+  background-color: #edd5bb;
+}
+#visitorListingPage #cardContainerVisitor .card:nth-child(odd) {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+#visitorListingPage #cardContainerVisitor .card:nth-child(odd) .card-body .title-badge {
+  color: #fcebd5;
+  padding: 3px 8px;
+  border: none;
+  border-radius: 2px;
+  background-color: #a16a5e;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#visitorListingPage #cardContainerVisitor .card:nth-child(odd) .card-subtitle {
+  font-size: 0.875rem;
+  color: #a16a5e;
+}
+#visitorListingPage #cardContainerVisitor .card:nth-child(even) {
+  background-color: #a16a5e;
+  color: #fcebd5;
+}
+#visitorListingPage #cardContainerVisitor .card:nth-child(even) .card-body .title-badge {
+  color: #a16a5e;
+  padding: 3px 8px;
+  border: none;
+  border-radius: 2px;
+  background-color: #fcebd5;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#visitorListingPage #cardContainerVisitor .card:nth-child(even) .card-subtitle {
+  font-size: 0.875rem;
+  color: #fcebd5;
+}
+#visitorListingPage #cardContainerVisitor .card {
+  margin-top: 2.8125rem;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+#visitorListingPage #cardContainerVisitor .card-img-top {
+  border-radius: 0;
+}
+#visitorListingPage #cardContainerVisitor .card-text {
+  font-size: 0.6875rem;
+}
+#visitorListingPage #cardContainerVisitor .btn-filter {
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  color: #fcebd5;
+  background-color: #d44c2e;
+  border: none;
+  border-radius: 2px;
+  bottom: 10px;
+  right: 10px;
+  font-size: 40px;
+}
+#visitorListingPage #cardContainerVisitor .offcanvas.offcanvas-end {
+  background-color: #a16a5e;
+  color: #fcebd5;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  border-left: 0;
+}
+#visitorListingPage #cardContainerVisitor .offcanvas.offcanvas-end .offcanvas-title {
+  font-family: "Roboto", sans-serif;
+}
+#visitorListingPage #cardContainerVisitor .offcanvas.offcanvas-end .btn-close {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fcebd5'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  opacity: 1;
+}
+#visitorListingPage #cardContainerVisitor .offcanvas.offcanvas-end #filterForm input {
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid #fcebd5;
+  border-radius: 2px;
+  padding: 2px 5px;
+  color: #fcebd5;
+}
+#visitorListingPage #cardContainerVisitor .offcanvas.offcanvas-end ::placeholder {
+  color: #fcebd5;
+  font-size: 13px;
+}
+#visitorListingPage #cardContainerVisitor .offcanvas.offcanvas-end .filter-hr-line {
+  height: 2px;
+  background-color: #fcebd5;
+  margin: 30px 0;
+}
+#visitorListingPage #cardContainerVisitor .offcanvas.offcanvas-end .select-filter {
+  width: 100px;
+  padding: 5px 10px;
+  border: 1px solid #fcebd5;
+  color: #fcebd5;
+  border-radius: 2px;
+  font-size: 13px;
+  background-color: transparent;
+}
+#visitorListingPage #cardContainerVisitor .offcanvas.offcanvas-end .select-filter option {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+#visitorListingPage #cardContainerVisitor .offcanvas.offcanvas-end label {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+#visitorListingPage #cardContainerVisitor .btn-filter-check {
+  right: 32px;
+}
+
+#artistHomePage {
+  display: none;
+  background-color: #edd5bb;
+}
+#artistHomePage .header {
+  background-color: #fcebd5;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#artistHomePage .header__logo {
+  margin-bottom: -35px;
+}
+#artistHomePage .header .offcanvas {
+  top: 62px;
+  height: 217px;
+  background-color: #a16a5e;
+  color: #fcebd5;
+}
+#artistHomePage .header .offcanvas li {
+  font-size: 1.875rem;
+}
+#artistHomePage .header .offcanvas li:hover {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+#artistHomePage .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#artistHomePage .items-info-box {
+  background-color: #a16a5e;
+  color: #fcebd5;
+}
+#artistHomePage .live-auctioning-item {
+  background-color: #d44c2e;
+  color: #fcebd5;
+}
+#artistHomePage .items-values {
+  font-size: 2.8125rem;
+}
+#artistHomePage .chart-container {
+  background-color: #fcebd5;
+}
+#artistHomePage .chart-container .income-btn {
+  color: #fcebd5;
+  font-size: 12px;
+  padding: 4px 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: #a16a5e;
+  padding: 8px 30px;
+}
+#artistHomePage .chart-container .income-btn:focus {
+  background-color: #d44c2e;
+}
+
+#artistItemsPage {
+  background-color: #edd5bb;
+}
+#artistItemsPage .header {
+  background-color: #fcebd5;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#artistItemsPage .header__logo {
+  margin-bottom: -35px;
+}
+#artistItemsPage .header .offcanvas {
+  top: 62px;
+  height: 217px;
+  background-color: #a16a5e;
+  color: #fcebd5;
+}
+#artistItemsPage .header .offcanvas li {
+  font-size: 1.875rem;
+}
+#artistItemsPage .header .offcanvas li:hover {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+#artistItemsPage .add-new-item {
+  background-color: #fcebd5;
+}
+#artistItemsPage .add-new-item .border {
+  border: 2px dashed #a16a5e !important;
+}
+#artistItemsPage .add-new-item h3 {
+  color: #a16a5e;
+}
+#artistItemsPage #cardContainerArtist .card {
+  margin-bottom: 1.875rem;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+#artistItemsPage #cardContainerArtist .card-body {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+#artistItemsPage #cardContainerArtist .card .card-body .title-badge {
+  color: #fcebd5;
+  padding: 3px 8px;
+  border: none;
+  border-radius: 2px;
+  background-color: #a16a5e;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#artistItemsPage #cardContainerArtist .card .card-subtitle {
+  font-size: 0.875rem;
+  color: #a16a5e;
+}
+#artistItemsPage #cardContainerArtist .card .card-date {
+  font-size: 0.5625rem;
+  color: #e09686;
+}
+#artistItemsPage #cardContainerArtist .card-img-top {
+  border-radius: 0;
+}
+#artistItemsPage #cardContainerArtist .card-text {
+  font-size: 0.6875rem;
+}
+#artistItemsPage #cardContainerArtist .card-footer {
+  background-color: #a16a5e;
+  border: none;
+  border-radius: 0;
+}
+#artistItemsPage #cardContainerArtist .card-footer .send-to-auction-btn {
+  color: #f8f8f8;
+  font-size: 12px;
+  padding: 4px 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: #1b59ac;
+}
+#artistItemsPage #cardContainerArtist .card-footer .unpublish-btn {
+  color: #f8f8f8;
+  font-size: 12px;
+  padding: 4px 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: #1bac6f;
+}
+#artistItemsPage #cardContainerArtist .card-footer .publish-btn {
+  color: #5a5a5a;
+  font-size: 12px;
+  padding: 4px 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: #e5e5e5;
+}
+#artistItemsPage #cardContainerArtist .card-footer .remove-btn {
+  color: #f8f8f8;
+  font-size: 12px;
+  padding: 4px 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: #d44c2e;
+}
+#artistItemsPage #cardContainerArtist .card-footer .edit-btn {
+  color: #a16a5e;
+  font-size: 12px;
+  padding: 4px 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: #fcebd5;
+}
+#artistItemsPage .offcanvas.offcanvas-end {
+  background-color: #a16a5e;
+  color: #fcebd5;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  border-left: 0;
+}
+#artistItemsPage .offcanvas.offcanvas-end .offcanvas-title {
+  font-family: "Roboto", sans-serif;
+}
+#artistItemsPage .offcanvas.offcanvas-end .new-item-form h2 {
+  margin: 0;
+}
+#artistItemsPage .offcanvas.offcanvas-end .new-item-form input,
+#artistItemsPage .offcanvas.offcanvas-end textarea {
+  background-color: transparent;
+  border: 1px solid #fcebd5;
+  border-radius: 2px;
+  padding: 2px 5px;
+  color: #fcebd5;
+}
+#artistItemsPage .offcanvas.offcanvas-end ::placeholder {
+  color: #fcebd5;
+  font-size: 13px;
+}
+#artistItemsPage .offcanvas.offcanvas-end .snapshot-btn {
+  border: 2px dashed #fcebd5;
+  color: #fcebd5;
+}
+#artistItemsPage .offcanvas.offcanvas-end .snapshot-btn p {
+  margin-bottom: 0;
+}
+#artistItemsPage .add-new-item-btn,
+#artistItemsPage .edit-item-btn {
+  color: #fcebd5;
+  font-size: 12px;
+  padding: 4px 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: #d44c2e;
+  font-size: 1.125rem;
+}
+#artistItemsPage .cancel-btn {
+  color: #5a5a5a;
+  font-size: 12px;
+  padding: 4px 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: #e5e5e5;
+  font-size: 1.125rem;
+}
+#artistItemsPage .form-check-reverse input {
+  background-color: #fcebd5 !important;
+}
+#artistItemsPage .camera-btn-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#artistItemsPage .select-filter {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #fcebd5;
+  color: #fcebd5;
+  border-radius: 2px;
+  font-size: 13px;
+  background-color: transparent;
+}
+#artistItemsPage .select-filter option {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+#artistItemsPage #click-photo {
+  color: #fcebd5;
+  font-size: 2.8125rem;
+}
+
+#auctionPage {
+  display: none;
+  background-color: #fcebd5;
+}
+#auctionPage .header {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#auctionPage .header__logo {
+  margin-bottom: -35px;
+}
+#auctionPage .auction-card-container .card {
+  background-color: #a16a5e;
+  color: #fcebd5;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+#auctionPage .auction-card-container .card .card-body .title-badge {
+  color: #a16a5e;
+  padding: 3px 8px;
+  border: none;
+  border-radius: 2px;
+  background-color: #fcebd5;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#auctionPage .auction-card-container .card .card-subtitle {
+  font-size: 0.875rem;
+  color: #fcebd5;
+}
+#auctionPage .auction-card-container .card-img-top {
+  border-radius: 0;
+}
+#auctionPage .auction-card-container .card-text {
+  font-size: 0.6875rem;
+}
+#auctionPage .primary-button {
+  color: #fcebd5;
+  font-size: 12px;
+  padding: 4px 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: #d44c2e;
+  font-size: 1.125rem;
+}
+#auctionPage .primary-button:focus {
+  border: none;
+  box-shadow: none;
+}
+#auctionPage #bidInput {
+  color: #a16a5e;
+}
+#auctionPage #bidInput:focus {
+  border: none;
+  box-shadow: none;
+}
+#auctionPage .biddings li:nth-child(odd) {
+  background-color: #edd5bb;
+  color: #a16a5e;
+}
+#auctionPage .biddings li:nth-child(odd) .badge {
+  background-color: #a16a5e;
+  color: #fcebd5;
+}
+#auctionPage .biddings li:nth-child(even) {
+  background-color: #a16a5e;
+  color: #fcebd5;
+}
+#auctionPage .biddings li:nth-child(even) .badge {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+
+/*# sourceMappingURL=main.css.map */
